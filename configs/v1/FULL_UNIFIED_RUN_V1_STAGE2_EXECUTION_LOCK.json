@@ -1,0 +1,23 @@
+﻿{
+    "created_at":  "2026-08-29T13:22:21.6201537Z",
+    "blocking_condition":  null,
+    "full_manifest_sha256":  "fc0c88e4cdfd68bbec1ea1e3358450bb7ce14de879faf10f71ede4313822003c",
+    "original_v1_lock_sha256":  "c2ab5c4da5ed88ea28d026bcde9c75cf05739014397e7c64f860857286f13af9",
+    "reused_interface_sha256":  {
+                                    "stage1_runner":  "4db5075e21e46a4cfa4054d1e9c79845479862a8f3a56bb379726c1172909e78",
+                                    "formal_data":  "055dea2eb718f695ea255e3d808f23a7ca9ec9e0d2a957869226aa306c411d10",
+                                    "legacy_adapter":  "cd95cd2cbc1bb59528d01b390d72bfe5312ec0dd505e58705fb6e1ea6f2dde4c"
+                                },
+    "authorization_status":  "AWAITING_AUTHOR_AUTHORIZATION",
+    "stage2_script_sha256":  {
+                                 "run_full_v1_stage2_task":  "3f9dcdc9086911479f55290e86ac12f2d115566721d783497d296400c9dbafe5",
+                                 "run_full_v1_stage2_coordinator":  "32c98ff9fe30a1d159c3320aa54d006630f827a3003a6dfa373137e6c5ce3051",
+                                 "preflight_full_v1_stage2":  "bb8186242e483cd4d553ecff4f599ca025a889680768e9af4d5ac028e0f5bbf5"
+                             },
+    "automatic_start_permitted":  false,
+    "preflight_status":  "READY_FOR_STAGE2_AWAITING_AUTHOR_AUTHORIZATION",
+    "scope":  "STAGE2_EXECUTION_ADAPTATION",
+    "experiment_version":  "FULL_UNIFIED_RUN_V1",
+    "stage2_manifest_sha256":  "3f76e06854b4f5c29f361dcec5cf96c1ff64aa84000ac4e21f8cd0e16fc614ec",
+    "stage2_task_count":  288
+}

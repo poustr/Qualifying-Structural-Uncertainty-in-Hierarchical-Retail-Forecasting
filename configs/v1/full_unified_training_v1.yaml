@@ -1,0 +1,84 @@
+experiment_version: FULL_UNIFIED_RUN_V1
+purpose: formal unified rerun split into two execution stages
+total_tasks: 639
+stage_counts:
+  stage_1: 351
+  stage_2: 288
+stage_difference_only: execution time and task subset
+datasets:
+- M5
+- Favorita
+- Store Item
+forecast_origins:
+  M5:
+  - '2015-12-07'
+  - '2016-01-04'
+  - '2016-02-01'
+  Favorita:
+  - '2017-03-01'
+  - '2017-03-29'
+  - '2017-04-26'
+  Store Item:
+  - '2017-05-22'
+  - '2017-06-19'
+  - '2017-07-17'
+neural_seeds:
+- 13
+- 29
+- 47
+common_shape:
+  history: 84
+  horizon: 28
+  nodes: 90
+  input: B,T,N
+  output: B,H,N
+training:
+  max_epochs: 50
+  min_epochs: 10
+  loss: log1p_huber_delta_1
+  batch_size: 4
+  gradient_clip_norm: 5.0
+  default_optimizer:
+    name: Adam
+    learning_rate: 0.001
+  mixlinear_optimizer:
+    name: Adam
+    learning_rate: 0.01
+  amp: false
+  single_gpu_serial: true
+early_stopping:
+  enabled: true
+  inner_validation_horizon_days: 28
+  inner_validation_origin: latest locked 28-day training origin strictly before the
+    formal forecast origin
+  monitor: mean log1p Huber loss
+  mode: min
+  patience: 7
+  min_relative_improvement: 0.001
+  min_epochs: 10
+  max_epochs: 50
+  restore_best_weights: true
+refit:
+  enabled: true
+  reinitialize_with_same_seed: true
+  epochs: selected best epoch e_star
+  data: all locked rolling training origins strictly before the formal origin, including
+    the inner-validation origin
+  formal_target_never_used_for_selection: true
+checkpoint:
+  each_epoch: true
+  atomic_write: true
+  save_model_optimizer_scheduler_rng_early_stop_and_phase: true
+metrics:
+- RMSSE
+- WAPE
+- MAE
+target_transform: log1p
+store_item_prohibited_files:
+- test.csv
+- sample_submission.csv
+- sealed_independent_test
+store_item_semantic: not_applicable
+mage_placebo_control: approximate_control
+performance_driven_protocol_change: false
+stage2_must_reuse_protocol_hash: true

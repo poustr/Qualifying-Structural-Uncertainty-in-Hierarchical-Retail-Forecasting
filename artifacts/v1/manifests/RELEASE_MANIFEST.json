@@ -1,0 +1,19 @@
+{
+  "experiment_id": "unified_rerun_v1",
+  "artifact_count": 28,
+  "formal_valid_tasks": 639,
+  "model_configurations": 26,
+  "result_artifact_verification": "recomputation_available",
+  "checkpoint_replay": "planned_not_uploaded_and_not_portable",
+  "full_retraining": "dry_run_available_execution_blocked_by_model_source_and_data_maps",
+  "checkpoint_final_formal_count": 639,
+  "checkpoint_final_archived_total": 640,
+  "checkpoint_all_archived_total": 1922,
+  "checkpoint_final_formal_gib": 2.245,
+  "checkpoint_all_gib": 5.289,
+  "raw_data_included": false,
+  "prediction_arrays_included": false,
+  "model_weights_included": false,
+  "release_status": "prepared_not_pushed",
+  "single_task_training": "m5_seasonal_naive_available_neural_blocked_by_model_source"
+}

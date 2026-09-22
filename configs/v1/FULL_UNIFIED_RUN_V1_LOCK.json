@@ -1,0 +1,126 @@
+{
+    "experiment_version":  "FULL_UNIFIED_RUN_V1",
+    "purpose":  "formal unified rerun split into two execution stages",
+    "total_tasks":  639,
+    "stage_counts":  {
+                         "stage_1":  351,
+                         "stage_2":  288
+                     },
+    "stage_difference_only":  "execution time and task subset",
+    "datasets":  [
+                     "M5",
+                     "Favorita",
+                     "Store Item"
+                 ],
+    "forecast_origins":  {
+                             "M5":  [
+                                        "2015-12-07",
+                                        "2016-01-04",
+                                        "2016-02-01"
+                                    ],
+                             "Favorita":  [
+                                              "2017-03-01",
+                                              "2017-03-29",
+                                              "2017-04-26"
+                                          ],
+                             "Store Item":  [
+                                                "2017-05-22",
+                                                "2017-06-19",
+                                                "2017-07-17"
+                                            ]
+                         },
+    "neural_seeds":  [
+                         13,
+                         29,
+                         47
+                     ],
+    "common_shape":  {
+                         "history":  84,
+                         "horizon":  28,
+                         "nodes":  90,
+                         "input":  "B,T,N",
+                         "output":  "B,H,N"
+                     },
+    "training":  {
+                     "max_epochs":  50,
+                     "min_epochs":  10,
+                     "loss":  "log1p_huber_delta_1",
+                     "batch_size":  4,
+                     "gradient_clip_norm":  5.0,
+                     "default_optimizer":  {
+                                               "name":  "Adam",
+                                               "learning_rate":  0.001
+                                           },
+                     "mixlinear_optimizer":  {
+                                                 "name":  "Adam",
+                                                 "learning_rate":  0.01
+                                             },
+                     "amp":  false,
+                     "single_gpu_serial":  true
+                 },
+    "early_stopping":  {
+                           "enabled":  true,
+                           "inner_validation_horizon_days":  28,
+                           "inner_validation_origin":  "latest locked 28-day training origin strictly before the formal forecast origin",
+                           "monitor":  "mean log1p Huber loss",
+                           "mode":  "min",
+                           "patience":  7,
+                           "min_relative_improvement":  0.001,
+                           "min_epochs":  10,
+                           "max_epochs":  50,
+                           "restore_best_weights":  true
+                       },
+    "refit":  {
+                  "enabled":  true,
+                  "reinitialize_with_same_seed":  true,
+                  "epochs":  "selected best epoch e_star",
+                  "data":  "all locked rolling training origins strictly before the formal origin, including the inner-validation origin",
+                  "formal_target_never_used_for_selection":  true
+              },
+    "checkpoint":  {
+                       "each_epoch":  true,
+                       "atomic_write":  true,
+                       "save_model_optimizer_scheduler_rng_early_stop_and_phase":  true
+                   },
+    "metrics":  [
+                    "RMSSE",
+                    "WAPE",
+                    "MAE"
+                ],
+    "target_transform":  "log1p",
+    "store_item_prohibited_files":  [
+                                        "test.csv",
+                                        "sample_submission.csv",
+                                        "sealed_independent_test"
+                                    ],
+    "store_item_semantic":  "not_applicable",
+    "mage_placebo_control":  "approximate_control",
+    "performance_driven_protocol_change":  false,
+    "stage2_must_reuse_protocol_hash":  true,
+    "status":  "FULL_UNIFIED_RUN_V1_STAGE1_RUNNING",
+    "created_local_time":  "2026-08-26T14:55:32.371705+08:00",
+    "metric_protocol_sha256":  "d7c77384eedf44b83bb464f03081bda024ebcdf3ebd2c5ef3e38acffa7bbfeef",
+    "full_manifest_sha256":  "fc0c88e4cdfd68bbec1ea1e3358450bb7ce14de879faf10f71ede4313822003c",
+    "compatibility_summary_sha256":  "e9eaa746cafb95618801b6dd43f40f01947930f5a00990f2b233b8e7d3429348",
+    "formal_training_started":  true,
+    "cublas_workspace_config":  ":4096:8",
+    "v1_runner_sources":  {
+                              "scripts\\run_full_v1_task.py":  "4db5075e21e46a4cfa4054d1e9c79845479862a8f3a56bb379726c1172909e78",
+                              "scripts\\run_full_v1_stage1_coordinator.py":  "33ffa4a3acf412715c3525c23e9be72927cec3ec9a3ef67141b2217ff87a713b",
+                              "scripts\\resolve_full_v1_hashes.py":  "688eaf0e9a518b50e47b20f80d1058cf6cfeaedc0b763750c7387137c75769d4",
+                              "src\\data\\formal_data.py":  "055dea2eb718f695ea255e3d808f23a7ca9ec9e0d2a957869226aa306c411d10",
+                              "src\\adapters\\legacy_adapter.py":  "cd95cd2cbc1bb59528d01b390d72bfe5312ec0dd505e58705fb6e1ea6f2dde4c"
+                          },
+    "runner_short_test":  {
+                              "task_id":  "v1_0019_m5_20151207_tcn_no_graph_s13",
+                              "output_scope":  "outputs/full_unified_run_v1/_tests/short_refit",
+                              "max_epochs":  3,
+                              "selected_epoch":  3,
+                              "refit_epochs":  3,
+                              "checkpoint_reload_passed":  true,
+                              "leakage_check_passed":  true,
+                              "formal_result":  false
+                          },
+    "updated_before_formal_start":  "2026-08-26T17:13:18.7315127+08:00",
+    "formal_training_started_at":  "2026-08-26T17:13:59.8609669+08:00"
+}

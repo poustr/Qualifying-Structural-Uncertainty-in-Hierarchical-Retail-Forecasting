@@ -1,0 +1,22 @@
+﻿{
+    "selection_metric":  "inner_validation_loss",
+    "created_at":  "2026-08-29T13:30:27.2439826Z",
+    "amendment_id":  "001",
+    "full_manifest_sha256":  "fc0c88e4cdfd68bbec1ea1e3358450bb7ce14de879faf10f71ede4313822003c",
+    "original_v1_lock_sha256":  "c2ab5c4da5ed88ea28d026bcde9c75cf05739014397e7c64f860857286f13af9",
+    "amendment_scope":  "Global LightGBM tree-count candidates",
+    "author_authorization":  true,
+    "parameter_invariance":  "All existing Global LightGBM parameters remain unchanged except selected n_estimators.",
+    "formal_target_access_prohibited_for_selection":  true,
+    "stage2_execution_lock_sha256":  "3b0e28071b8c7e9f98887800563277809c445af1a88a98c6a0ffac02ec1bd2cb",
+    "experiment_version":  "FULL_UNIFIED_RUN_V1",
+    "internal_validation_horizon":  28,
+    "stage2_manifest_sha256":  "3f76e06854b4f5c29f361dcec5cf96c1ff64aa84000ac4e21f8cd0e16fc614ec",
+    "tree_count_candidates":  [
+                                  25,
+                                  50,
+                                  100,
+                                  200
+                              ],
+    "refit_policy":  "train_on_all_pre_origin_data_with_selected_tree_count"
+}

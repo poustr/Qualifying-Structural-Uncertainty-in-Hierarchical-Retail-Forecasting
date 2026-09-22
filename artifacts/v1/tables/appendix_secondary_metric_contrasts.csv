@@ -1,0 +1,69 @@
+﻿dataset,candidate,contrast_type,control,metric,delta,paired_origin_seed_units
+Favorita,tcn_business,graph,tcn_no_graph,WAPE,0.08150354145578079,9
+Favorita,tcn_business,graph,tcn_no_graph,MAE,1.7794543534385885,9
+M5,tcn_business,graph,tcn_no_graph,WAPE,-0.024834784984934164,9
+M5,tcn_business,graph,tcn_no_graph,MAE,-0.047844091216241814,9
+Store Item,tcn_business,graph,tcn_no_graph,WAPE,-0.01457368104141996,9
+Store Item,tcn_business,graph,tcn_no_graph,MAE,-0.9920836510481656,9
+Favorita,tcn_stat_confidence,graph,tcn_no_graph,WAPE,0.10943360835203146,9
+Favorita,tcn_stat_confidence,graph,tcn_no_graph,MAE,2.420725314754572,9
+M5,tcn_stat_confidence,graph,tcn_no_graph,WAPE,-0.07863620866410916,9
+M5,tcn_stat_confidence,graph,tcn_no_graph,MAE,-0.24360608098842867,9
+Store Item,tcn_stat_confidence,graph,tcn_no_graph,WAPE,-0.008146012397324813,9
+Store Item,tcn_stat_confidence,graph,tcn_no_graph,MAE,-0.5030651293524149,9
+Favorita,tcn_stat_confidence,weight,tcn_stat_equal,WAPE,-0.004576855754673216,9
+Favorita,tcn_stat_confidence,weight,tcn_stat_equal,MAE,-0.10083512773596048,9
+M5,tcn_stat_confidence,weight,tcn_stat_equal,WAPE,0.04732333360999457,9
+M5,tcn_stat_confidence,weight,tcn_stat_equal,MAE,0.30999426804396696,9
+Store Item,tcn_stat_confidence,weight,tcn_stat_equal,WAPE,0.0024421412023080077,9
+Store Item,tcn_stat_confidence,weight,tcn_stat_equal,MAE,0.1758383753858967,9
+Favorita,tcn_stat_confidence,topology,tcn_stat_placebo,WAPE,0.01767572496914887,9
+Favorita,tcn_stat_confidence,topology,tcn_stat_placebo,MAE,0.3885674808123455,9
+M5,tcn_stat_confidence,topology,tcn_stat_placebo,WAPE,-0.07148324468458314,9
+M5,tcn_stat_confidence,topology,tcn_stat_placebo,MAE,-0.19968047079599816,9
+Store Item,tcn_stat_confidence,topology,tcn_stat_placebo,WAPE,-0.01403830341828226,9
+Store Item,tcn_stat_confidence,topology,tcn_stat_placebo,MAE,-0.8957033120345392,9
+Favorita,gts_native,graph,gts_no_graph,WAPE,-0.1259219881455478,9
+Favorita,gts_native,graph,gts_no_graph,MAE,-2.7908437725842052,9
+M5,gts_native,graph,gts_no_graph,WAPE,-0.13783866071891143,9
+M5,gts_native,graph,gts_no_graph,MAE,-0.506101388125046,9
+Store Item,gts_native,graph,gts_no_graph,WAPE,-0.05315520555425425,9
+Store Item,gts_native,graph,gts_no_graph,MAE,-3.493861983398492,9
+Favorita,gts_native,topology,gts_placebo,WAPE,-0.03497760383119398,9
+Favorita,gts_native,topology,gts_placebo,MAE,-0.7802398637715036,9
+M5,gts_native,topology,gts_placebo,WAPE,-0.08506653905342933,9
+M5,gts_native,topology,gts_placebo,MAE,-0.22044047997509042,9
+Store Item,gts_native,topology,gts_placebo,WAPE,0.07884681936308634,9
+Store Item,gts_native,topology,gts_placebo,MAE,5.215274073922024,9
+Favorita,mtgnn_native,graph,mtgnn_no_graph,WAPE,-0.021942075333864528,9
+Favorita,mtgnn_native,graph,mtgnn_no_graph,MAE,-0.4745519440371886,9
+M5,mtgnn_native,graph,mtgnn_no_graph,WAPE,-0.05392016472341906,9
+M5,mtgnn_native,graph,mtgnn_no_graph,MAE,-0.11532240379020996,9
+Store Item,mtgnn_native,graph,mtgnn_no_graph,WAPE,0.006570319507400581,9
+Store Item,mtgnn_native,graph,mtgnn_no_graph,MAE,0.43107998043141077,9
+Favorita,mtgnn_native,topology,mtgnn_placebo,WAPE,-0.009382325227205465,9
+Favorita,mtgnn_native,topology,mtgnn_placebo,MAE,-0.21323439040006992,9
+M5,mtgnn_native,topology,mtgnn_placebo,WAPE,-0.028204726832365103,9
+M5,mtgnn_native,topology,mtgnn_placebo,MAE,-0.04063898285005571,9
+Store Item,mtgnn_native,topology,mtgnn_placebo,WAPE,-0.017895068583616194,9
+Store Item,mtgnn_native,topology,mtgnn_placebo,MAE,-1.2113939835701457,9
+Favorita,mage_native,graph,mage_no_graph,WAPE,-0.005630877130832952,9
+Favorita,mage_native,graph,mage_no_graph,MAE,-0.12545660551147955,9
+M5,mage_native,graph,mage_no_graph,WAPE,0.0333972725212616,9
+M5,mage_native,graph,mage_no_graph,MAE,0.11712764695016348,9
+Store Item,mage_native,graph,mage_no_graph,WAPE,-0.009483254210411221,9
+Store Item,mage_native,graph,mage_no_graph,MAE,-0.6093558128548681,9
+Favorita,mage_native,topology,mage_placebo,WAPE,-0.004660791227309101,9
+Favorita,mage_native,topology,mage_placebo,MAE,-0.1048541845909564,9
+M5,mage_native,topology,mage_placebo,WAPE,-0.006426455497048579,9
+M5,mage_native,topology,mage_placebo,MAE,-0.035304934885337244,9
+Store Item,mage_native,topology,mage_placebo,WAPE,4.635716135135508e-06,9
+Store Item,mage_native,topology,mage_placebo,MAE,0.0003334144646104499,9
+Favorita,semantic_knn_tcn,graph,metadata_embedding_tcn,WAPE,0.017622218339019016,9
+Favorita,semantic_knn_tcn,graph,metadata_embedding_tcn,MAE,0.3934297556943727,9
+M5,semantic_knn_tcn,graph,metadata_embedding_tcn,WAPE,0.03488756014739902,9
+M5,semantic_knn_tcn,graph,metadata_embedding_tcn,MAE,0.11952520748978146,9
+Favorita,semantic_knn_tcn,topology,semantic_placebo_tcn,WAPE,0.03710277944136322,9
+Favorita,semantic_knn_tcn,topology,semantic_placebo_tcn,MAE,0.8242013888737445,9
+M5,semantic_knn_tcn,topology,semantic_placebo_tcn,WAPE,0.03394931385686664,9
+M5,semantic_knn_tcn,topology,semantic_placebo_tcn,MAE,0.1501498299248425,9

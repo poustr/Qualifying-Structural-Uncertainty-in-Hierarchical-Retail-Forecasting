@@ -1,0 +1,18 @@
+{
+  "status": "FULL_UNIFIED_RUN_V1_ANALYSIS_COMPLETE",
+  "manifest_sha256": "fc0c88e4cdfd68bbec1ea1e3358450bb7ce14de879faf10f71ede4313822003c",
+  "valid_tasks": 639,
+  "stage1_tasks": 351,
+  "stage2_tasks": 288,
+  "model_configurations": 26,
+  "datasets": [
+    "Favorita",
+    "M5",
+    "Store Item"
+  ],
+  "bootstrap_reps": 2000,
+  "bootstrap_seed": 20260901,
+  "graph_matrices_recovered": 153,
+  "qualification_records": 18,
+  "store_item_prohibited_files_accessed": false
+}
