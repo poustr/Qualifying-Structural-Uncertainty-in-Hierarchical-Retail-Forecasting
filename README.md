@@ -37,9 +37,15 @@ python scripts/run_single_task.py --task-id v1_0001_m5_20151207_seasonal_naive_s
 
 The deterministic M5 example is available without neural training. Locked
 90-node validation-demand preparation also works for Favorita and Store Item.
-The exact Controlled TCN source and neural feature tensors are not yet
-portable; neural tasks fail explicitly rather than substituting a model or
-feature set. See [docs/single_task_reproduction.md](docs/single_task_reproduction.md)
+The original Controlled TCN core has been recovered and hash-verified. Exact
+historical neural tensors can now be generated for all three data sets, and
+one real M5 Controlled TCN task passed training, checkpoint reload, and resume.
+One original M5 Global LightGBM task also passed real training, checkpoint
+reload, resume, and comparison with its published metrics. M5 and Favorita
+semantic inputs were reconstructed from official metadata with historical
+hash matches. The remaining model-family tasks are not all verified; they
+fail explicitly rather than
+substituting a model or feature set. See [docs/single_task_reproduction.md](docs/single_task_reproduction.md)
 and [docs/repository_scope.md](docs/repository_scope.md).
 
 ### C. Full experiment
@@ -52,7 +58,7 @@ python scripts/run_unified_rerun_v1.py --config configs/v1/full_unified_training
 
 The dry run resolves 639 unique task keys and supports `--dataset`, `--stage`,
 `--task-id`, and `--max-tasks`. Full training was not run while preparing this
-repository. Current model-source and neural-feature blockers are stated in
+repository. Current remaining model-family and licensing blockers are stated in
 [docs/full_reproduction.md](docs/full_reproduction.md); the verified dependency
 boundary is recorded in [docs/reproduction_dependency_audit.md](docs/reproduction_dependency_audit.md).
 

@@ -1,0 +1,58 @@
+{
+  "status": "BLOCKED_BY_THIRD_PARTY_LICENSE",
+  "quick_reproduction": {
+    "status": "COMPLETE",
+    "recomputes_statistics_and_qualification": true,
+    "comparison_passed": true,
+    "training_dependencies_imported": false
+  },
+  "single_task_reproduction": {
+    "m5_data_preparation": "AVAILABLE",
+    "seasonal_naive": "AVAILABLE",
+    "controlled_tcn": "M5_REAL_TASK_PASSED_CHECKPOINT_RELOAD_RESUME_AND_PUBLISHED_METRICS",
+    "favorita_data_preparation": "42_OF_42_HISTORICAL_TENSOR_HASHES_AND_3_OF_3_GRAPH_HASHES_MATCH",
+    "store_item_data_preparation": "42_OF_42_HISTORICAL_TENSOR_HASHES_AND_3_OF_3_GRAPH_HASHES_MATCH",
+    "m5_data_preparation_detail": "42_OF_42_HISTORICAL_TENSOR_HASHES_AND_3_OF_3_GRAPH_HASHES_MATCH",
+    "real_deterministic_tasks_verified": 3,
+    "real_neural_tasks_verified": 1,
+    "real_lightgbm_tasks_verified": 1,
+    "lightgbm_m5_published_metric_match": true,
+    "m5_favorita_semantic_embeddings": "REGENERATED_FROM_OFFICIAL_METADATA_WITH_HISTORICAL_TEXT_AND_TENSOR_SHA256_MATCH",
+    "semantic_adapter_no_gradient_interface": "M5_AND_FAVORITA_PASS",
+    "three_dataset_no_gradient_interface": "PASS",
+    "three_dataset_statistical_adapter_no_gradient_interface": "PASS_WITH_READ_ONLY_ORIGINAL_STRUCTURE_INPUTS"
+  },
+  "full_reproduction": {
+    "manifest_tasks": 639,
+    "dry_run_status": "COMPLETE",
+    "full_training_executed": false,
+    "execution_status": "M5_CONTROLLED_TCN_NO_GRAPH_AND_LIGHTGBM_REAL_TASKS_VERIFIED_OTHER_FAMILIES_NOT_VERIFIED",
+    "remaining_prerequisites": [
+      "reader_side_statistical_structure_input_generation",
+      "semantic_model_real_task_validation",
+      "pinned_optional_model_sources_and_real_task_checks",
+      "MixLinear_and_MAGE_license_review"
+    ]
+  },
+  "tests": {"passed": 19, "failed": 0, "artifact_hash_validation": "PASS"},
+  "cleanup": {
+    "aggregation_failures_removed": true,
+    "caches_removed": true,
+    "internal_release_material_removed": true,
+    "nonfunctional_replay_placeholders_removed": true
+  },
+  "third_party": {
+    "on_demand_installation": true,
+    "mage_redistributed": false,
+    "mage_reason": "NO_LICENSE_FILE_FOUND",
+    "mixlinear_reason": "NO_LICENSE_FILE_FOUND",
+    "optional_model_families_end_to_end_verified": false
+  },
+  "release_metadata": {
+    "license_selected": false,
+    "citation_todos_resolved": false,
+    "repository_url_resolved": false
+  },
+  "protected_sources_modified": false,
+  "created_date": "2026-09-22"
+}

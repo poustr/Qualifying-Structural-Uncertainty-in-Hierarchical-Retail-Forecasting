@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Retail Structure Qualification"
+type: software
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+version: "unified_rerun_v1"
+date-released: "TODO"
+repository-code: "TODO"
