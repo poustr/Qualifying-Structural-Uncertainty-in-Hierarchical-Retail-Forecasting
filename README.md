@@ -73,9 +73,3 @@ boundary is recorded in [docs/reproduction_dependency_audit.md](docs/reproductio
 See [docs/quickstart.md](docs/quickstart.md), [docs/environment.md](docs/environment.md),
 [docs/result_aggregation.md](docs/result_aggregation.md), and
 [docs/troubleshooting.md](docs/troubleshooting.md) for details.
-
-## Citation and license
-
-`CITATION.cff`, the repository URL, and the code license still require author
-completion before public release. Do not infer a license from the presence of
-source files.
